@@ -14,7 +14,7 @@ body {
 .header {
     width: auto;
  
-    height: 64px;
+    height: 90px;
     background-color: #ffffff;
     
     display: flex;
@@ -25,7 +25,7 @@ body {
     padding-left: 119px;
     padding-right: 119px;
     
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
 }
 
 /* --- Логотип --- */
@@ -37,14 +37,14 @@ body {
 
 .logo-top {
     font-family: 'Black Signature PERSONAL USE ONLY';
-    font-size: 15.7px;
+    font-size: 16px;
     color: #3E3E3E;
 }
 
 .logo-bottom {
     font-family: 'Changa One';
-    font-size: 26.69px;
-    font-weight: bold;
+    font-size: 28px;
+    font-weight: 400;
     color: #8A53FF;
 }
 
@@ -64,8 +64,8 @@ body {
 
 .nav a {
     text-decoration: none;
-    color: #666;
-    font-size: 12.56px;
+    color: #495367;
+    font-size: 16px;
 }
 
 .nav a.active {
@@ -75,8 +75,8 @@ body {
 /* --- Разделитель --- */
 .separator {
     width: 1px;
-    height: 24px;
-    background-color: #e0e0e0;
+    height: 18.53px;
+    background-color: #EEEEEE;
 }
 
 /* --- Иконки --- */
@@ -93,3 +93,90 @@ body {
     object-fit: contain;
 }
 
+.hero-block {
+    width: 100%;             /* Растягиваем блок на всю ширину */
+    height: 580px;       /* Задаем минимальную высоту блока (можно в px или vh) */
+    
+    /* Добавляем изображение */
+    background-image: linear-gradient(to right, 
+                        rgba(255, 255, 255, 1) 0%, 
+                        rgba(255, 255, 255, 0) 78%),
+    url('../img/Фон.png'); 
+    
+    /* Настройки отображения картинки: */
+    background-repeat: no-repeat;  /* Запрещаем картинке размножаться плиткой */
+    background-size: cover;        /* Масштабируем картинку, чтобы она полностью закрыла блок */
+    background-position: center;   /* Центрируем картинку по вертикали и горизонтали */
+    
+    /* Дополнительно: выравнивание текста внутри блока */
+    display: flex;
+    align-items: flex-start;           /* Центрируем контент по вертикали */
+
+    padding-left: 140px;
+    padding-top: 124px;
+}
+
+.hero__title {
+    font-family: 'Changa One', sans-serif;
+    font-size: 73px;
+    font-weight: 400;         
+    line-height: 84px;        
+    letter-spacing: -0.01em; 
+    color: #434343;
+}
+
+.hero__title-accent {
+  color: #8A53FF;
+}
+
+.hero__description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-weight: 400;         
+    line-height: 36px;  
+    color: #434343;
+    padding-top: 12px;
+}
+
+.hero__actions {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    padding-top: 26px;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 46px;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    transition: opacity 0.2s;
+}
+
+.button--primary {
+    background: #8A53FF;
+    color: #ffffff;
+}
+
+.hero__actions--secondary {
+    display: inline-flex;
+}
+.icon--video {
+    width: 36px;      /* задайте нужный размер */
+    height: 36px;
+    cursor: pointer;
+    object-fit: contain;
+}
+
+.button--secondary {
+    color: #434343;
+}
