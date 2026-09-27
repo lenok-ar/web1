@@ -1,0 +1,95 @@
+/* Сброс */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* --- Хедер --- */
+.header {
+    width: auto;
+ 
+    height: 64px;
+    background-color: #ffffff;
+    
+    display: flex;
+    justify-content: space-between; /* Логотип к левому краю, меню к правому */
+    align-items: center;
+    
+    /* Внутренние отступы для контента (чтобы текст не прилипал к краям белого блока) */
+    padding-left: 119px;
+    padding-right: 119px;
+    
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* --- Логотип --- */
+.logo {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+.logo-top {
+    font-family: 'Black Signature PERSONAL USE ONLY';
+    font-size: 15.7px;
+    color: #3E3E3E;
+}
+
+.logo-bottom {
+    font-family: 'Changa One';
+    font-size: 26.69px;
+    font-weight: bold;
+    color: #8A53FF;
+}
+
+/* --- Правая часть --- */
+.right-side {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* --- Меню --- */
+.nav {
+    font-family: 'Roboto';
+    display: flex;
+    gap: 24px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #666;
+    font-size: 12.56px;
+}
+
+.nav a.active {
+    color: #8A53FF;
+}
+
+/* --- Разделитель --- */
+.separator {
+    width: 1px;
+    height: 24px;
+    background-color: #e0e0e0;
+}
+
+/* --- Иконки --- */
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.icon {
+    width: 24px;      /* задайте нужный размер */
+    height: 24px;
+    cursor: pointer;
+    object-fit: contain;
+}
+
