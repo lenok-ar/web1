@@ -286,7 +286,7 @@ body {
     font-size: 24px;
     font-weight: 400;
     line-height: 36px;
-    color: #434343;
+    color: #576074;
     margin-top: 10px;
 }
 
@@ -307,14 +307,137 @@ body {
   margin: 0;
 }
     
-.share{
-    width: 100vw;
-    height: 900px;  
-    background-repeat: no-repeat; 
-    background-size: cover;        
-    background-position: center;   
-    background-image: url('../img/share.png'); 
+.share {
+  width: 100%;
+  /* Убрал фиксированную высоту 900px, чтобы блок подстраивался под контент */
+  padding-top: 100px;
+  padding-bottom: 100px;
+  
+  /* Фон (оставил как у тебя) */
+  background-image: url('../img/share.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+  /* ЭТО ВАЖНО: Центрируем карточку внутри секции */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-    display: flex;
-    align-items: flex-start;          
+.share__header {
+  text-align: center;
+  margin-bottom: 30px; /* Отступ от заголовка до белой карточки */
+}
+
+.share__eyebrow {
+  margin-bottom: 10px;
+}
+
+.share__title {
+  margin: 0;
+}
+
+/* --- Белая карточка --- */
+.share__card {
+  background-color: #ffffff;
+  width: 617px; /* Твоя ширина */
+  height: auto; 
+  
+  border-radius: 12px;
+  
+  /* ЭТО ВАЖНО: Внутренние отступы, чтобы текст не прилипал к краям */
+  padding: 28px 30px;
+  
+  /* Выстраиваем элементы внутри карточки друг под другом */
+  display: flex;
+  flex-direction: column;
+  
+  /* Тень для красоты (как на макете) */
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.03);
+}
+
+.share__card-title {
+  font-family: 'Changa One', sans-serif; /* Или Changa One, если хочешь как заголовок */
+  font-size: 24px;
+  font-weight: 400;
+  color: #434343;
+  line-height: 36px;
+  margin-bottom: 6px;
+}
+
+.share__card-text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color: #576074;
+  line-height: 34px;
+  margin-bottom: 17px; /* Отступ до начала формы */
+}
+
+/* --- Форма --- */
+.share__form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Расстояние между полями ввода */
+}
+
+.share__field {
+  width: 100%;
+}
+
+/* Стили для всех полей ввода (input, select, textarea) */
+.share__field input,
+.share__field select,
+.share__field textarea {
+  width: 100%;
+  padding: 16px 12px;
+  border: 1px solid rgba(0, 0, 0, 0.23); /* Светло-серая рамка */
+  border-radius: 4px;
+  font-family: 'Roboto', sans-serif; /* Шрифт Roboto */
+  font-size: 16px;                   /* Размер 16 */
+  font-weight: 400;                  /* Regular (обычный) */
+  line-height: 24px;                 /* Line height 24 */
+  letter-spacing: 0.15px; 
+  color: #576074;
+  background-color: #ffffff;
+  outline: none; /* Убираем синюю рамку при клике по умолчанию */
+}
+
+.share__field input::placeholder,
+.share__field textarea::placeholder {
+  color: #576074;
+}
+
+/* Чтобы при клике рамка становилась фиолетовой */
+.share__field input:focus,
+.share__field select:focus,
+.share__field textarea:focus {
+  border-color: #8A53FF;
+}
+
+/* Специально для большого поля описания */
+.share__field textarea {
+  min-height: 102px; /* Минимальная высота */
+  resize: vertical; /* Можно тянуть только вниз */
+}
+
+.share__submit {
+  margin-top: 5px;
+  width: 222px; 
+  height: 46px;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 4px;
+}
+
+/* Класс для скрытия подписей (label), который уже есть в HTML */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
