@@ -10,7 +10,7 @@ body {
     background-color: #f4f4f4;
 }
 
-/* --- Хедер --- */
+/*Хедер*/
 .header {
     width: auto;
  
@@ -27,7 +27,7 @@ body {
     box-shadow: 0 4px 16px rgba(0,0,0,0.08);
 }
 
-/* --- Логотип --- */
+/*Логотип*/
 .logo {
     display: flex;
     flex-direction: column;
@@ -47,14 +47,14 @@ body {
     color: #8A53FF;
 }
 
-/* --- Правая часть --- */
+/*Правая часть*/
 .right-side {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-/* --- Меню --- */
+/*Меню*/
 .nav {
     font-family: 'Roboto';
     display: flex;
@@ -71,7 +71,7 @@ body {
     color: #8A53FF;
 }
 
-/* --- Разделитель --- */
+/*Разделитель*/
 .separator {
     width: 1px;
     height: 18.53px;
@@ -309,17 +309,14 @@ body {
     
 .share {
   width: 100%;
-  /* Убрал фиксированную высоту 900px, чтобы блок подстраивался под контент */
   padding-top: 100px;
   padding-bottom: 100px;
   
-  /* Фон (оставил как у тебя) */
   background-image: url('../img/share.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  
-  /* ЭТО ВАЖНО: Центрируем карточку внутри секции */
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -327,7 +324,7 @@ body {
 
 .share__header {
   text-align: center;
-  margin-bottom: 30px; /* Отступ от заголовка до белой карточки */
+  margin-bottom: 30px; 
 }
 
 .share__eyebrow {
@@ -338,27 +335,21 @@ body {
   margin: 0;
 }
 
-/* --- Белая карточка --- */
+/*Белая карточка*/
 .share__card {
   background-color: #ffffff;
-  width: 617px; /* Твоя ширина */
+  width: 617px; 
   height: auto; 
   
   border-radius: 12px;
-  
-  /* ЭТО ВАЖНО: Внутренние отступы, чтобы текст не прилипал к краям */
   padding: 28px 30px;
-  
-  /* Выстраиваем элементы внутри карточки друг под другом */
   display: flex;
   flex-direction: column;
-  
-  /* Тень для красоты (как на макете) */
   box-shadow: 0 0 24px rgba(0, 0, 0, 0.03);
 }
 
 .share__card-title {
-  font-family: 'Changa One', sans-serif; /* Или Changa One, если хочешь как заголовок */
+  font-family: 'Changa One', sans-serif; 
   font-size: 24px;
   font-weight: 400;
   color: #434343;
@@ -371,14 +362,14 @@ body {
   font-size: 18px;
   color: #576074;
   line-height: 34px;
-  margin-bottom: 17px; /* Отступ до начала формы */
+  margin-bottom: 17px;
 }
 
 /* --- Форма --- */
 .share__form {
   display: flex;
   flex-direction: column;
-  gap: 10px; /* Расстояние между полями ввода */
+  gap: 10px; 
 }
 
 .share__field {
@@ -391,16 +382,16 @@ body {
 .share__field textarea {
   width: 100%;
   padding: 16px 12px;
-  border: 1px solid rgba(0, 0, 0, 0.23); /* Светло-серая рамка */
+  border: 1px solid rgba(0, 0, 0, 0.23); 
   border-radius: 4px;
-  font-family: 'Roboto', sans-serif; /* Шрифт Roboto */
-  font-size: 16px;                   /* Размер 16 */
-  font-weight: 400;                  /* Regular (обычный) */
-  line-height: 24px;                 /* Line height 24 */
+  font-family: 'Roboto', sans-serif; 
+  font-size: 16px;                   
+  font-weight: 400;               
+  line-height: 24px;              
   letter-spacing: 0.15px; 
   color: #576074;
   background-color: #ffffff;
-  outline: none; /* Убираем синюю рамку при клике по умолчанию */
+  outline: none; 
 }
 
 .share__field input::placeholder,
@@ -408,17 +399,15 @@ body {
   color: #576074;
 }
 
-/* Чтобы при клике рамка становилась фиолетовой */
 .share__field input:focus,
 .share__field select:focus,
 .share__field textarea:focus {
   border-color: #8A53FF;
 }
 
-/* Специально для большого поля описания */
 .share__field textarea {
-  min-height: 102px; /* Минимальная высота */
-  resize: vertical; /* Можно тянуть только вниз */
+  min-height: 102px; 
+  resize: vertical; 
 }
 
 .share__submit {
@@ -430,7 +419,6 @@ body {
   border-radius: 4px;
 }
 
-/* Класс для скрытия подписей (label), который уже есть в HTML */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -440,4 +428,181 @@ body {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
+}
+
+.recent {
+  background-color: #ffffff;
+  padding: 83px 120px;
+  min-height: 750px;
+  width: 100%;
+}
+
+.recent__header {
+  text-align: center;
+  margin-bottom: 30px; 
+}
+
+.recent__eyebrow {
+  margin-bottom: 15px;
+}
+
+.recent__title {
+  margin: 0;
+}
+
+/* --- Сетка: большая карточка + список --- */
+.recent__inner {
+  display: flex;
+}
+
+/* --- Большая карточка слева --- */
+.recent__main {
+    width: 600px;        
+    flex-shrink: 0;
+    
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.recent__main-image {
+    width: 560px;               
+    height: 358px;             
+    object-fit: cover;
+    
+    margin: 0 20px;
+    
+    border-radius: 8px 8px 0 0;
+    display: block;
+}
+
+.recent__main-row {
+  display: flex;
+  align-items: center;      
+  gap: 28px;
+}
+
+/* Блок с текстом и кнопкой (560×118) */
+.recent__main-content {
+    width: 560px;
+    margin: 0 20px;             
+    
+    padding: 14px 24px;         
+    
+    background-color: #F9F9F9;
+    
+    /* Скругление: верх 0, низ 8 */
+    border-radius: 0 0 8px 8px;
+    
+    box-sizing: border-box;    
+}
+
+.recent__main-text-block {
+    width: 512px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.recent__main-title {
+  font-family: 'Changa One', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #434343;
+}
+
+.recent__main-text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #576074;
+}
+
+/* Кнопка Play */
+.recent__play {
+  width: 49px;
+  height: 49px;
+  flex-shrink: 0;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  text-decoration: none;
+}
+
+.recent__play img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Список маленьких карточек справа */ 
+.recent__list {
+    width: 600px;
+    height: 476px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;         
+    flex: 1;
+}
+
+.recent__item {
+  display: flex;
+  gap: 20px;                 
+  
+  background-color: #F9F9F9; 
+  border-radius: 8px;       
+  
+  padding: 10px 11px;        
+  
+  min-height: 148px;         
+  box-sizing: border-box; 
+}
+
+/* Картинка: 200 × 128 */
+.recent__item-image {
+  width: 200px;
+  height: 128px;
+  object-fit: cover;
+  border-radius: 4px;         
+  flex-shrink: 0;             
+}
+
+.recent__item-content {
+    width: 358px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;                  
+
+    padding: 8px 0px;
+    max-width: 358px;                
+}
+
+.recent__item-title {
+  font-family: 'Changa One', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #434343;
+}
+
+.recent__item-text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #576074;
+}
+
+.recent__link {
+  color: #8A53FF;
+  text-decoration: none;
+}
+
+.recent__link:hover {
+  text-decoration: underline;
 }
