@@ -606,3 +606,53 @@ body {
 .recent__link:hover {
   text-decoration: underline;
 }
+
+.footer {
+    width: 100%;
+    min-height: 80px;           
+    
+    background-color: #ffffff;
+    
+    padding: 32px 120px;
+    
+    /* Раскладываем копирайт и меню по краям */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    box-sizing: border-box;
+}
+
+/* Копирайт */
+.footer__copyright {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    color: #939EB4;              
+}
+
+/* Меню в футере */
+.footer__nav {
+  display: flex;
+  gap: 30px;                    
+  width: 280px;                
+  justify-content: space-between;
+}
+
+/* Ссылки в меню */
+.footer__link {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0%;
+  color: #939EB4;
+  text-decoration: none;
+  
+  transition: color 0.2s;
+}
+
+.footer__link:hover {
+  color: #8A53FF;               /* фиолетовый при наведении */
+}
