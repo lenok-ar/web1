@@ -9,10 +9,10 @@
     <body>
         <header class="header">
         <!-- Логотип -->
-        <div class="logo" href="./story.html">
+        <a class="logo" href="./index.html">
             <span class="logo-top">Talking</span>
             <span class="logo-bottom">Travel</span>
-        </div>
+        </a>
 
         <!-- Правая часть -->
         <div class="right-side">
@@ -36,5 +36,163 @@
 
         </div>
     </header>
+
+    <section class="post">
+        <div class="story-block">
+            <div class="story">
+                <p class="story__eyebrow">POPULAR DESTINATION</p>
+                <h2 class="story__title">Hello Switzerland!</h2>
+            </div> 
+            <div class="author">
+                <img class="author__img" src="./img/author.png" alt="Автор публикации">
+                <div class="author__info">
+                    <span class="author__name">Darrell Steward</span>
+                    <span class="author__role">Author / Photographer</span>
+                </div>
+            </div>    
+        </div>
+
+        <div class="story-video">
+            <div class="video-name">
+                <span class="story-name">The Matterhorn</span>
+                <img class="video" src="img/Видео3.png" alt="">
+            </div>
+        </div>
+
+        <div class="story-text">
+            <div class="text-block">
+                <h2 class="text-title">Our Swiss adventure story</h2>
+                <p class="text-body">Location location location! Zermatt Switzerland offers majestic landscapes that cannot be seen elsewhere. The Matterhorn for example. This peak is a sight to behold and seeing it upclose is more magical that we’ve ever imagined. ‘Want to enjoy a nice and cozy swiss breakfast! Well, Zermatt will never fail you.</p>
+            </div>
+        </div>
+
+        <div class="hike">
+
+            <!-- Левая часть: сетка картинок -->
+            <div class="hike__gallery">
+                <div class="hike__item hike__item--large">
+                <img class="hike__image" src="img/Callout Swiss Winter Image.png" alt="Массивный горный склон">
+                </div>
+                <div class="hike__item hike__item--top">
+                <img class="hike__image" src="img/Callout Switzerland Mountains Pop-up.png" alt="Склон холма в тумане">
+                </div>
+                <div class="hike__item hike__item--bottom">
+                <img class="hike__image" src="img/Callout Switzerland sunset image.png" alt="Дома на фоне заснеженных пиков">
+                </div>
+            </div>
+
+            <!-- Правая часть: цитата и текст -->
+            <div class="hike__content">
+                <blockquote class="hike__quote">
+                    <img class="hike__quote-icon" src="./img/Кавычки.png" alt="" width="35" height="26">
+                    <p class="hike__quote-text">One of the best hikes we've done so far...</p>
+                </blockquote>
+
+                <div class="hike__text">
+                <p>As one of the alpine countries, landlocked Switzerland with her mountains has to compete not only with her neighbours but with other destinations. There are, e.g., no coastal resorts.<br><br>
+                    The advantage is that tourism in Switzerland benefits of a large diversity of beautiful landscapes in a relatively small space.
+                </p>
+                </div>
+
+                <a class="button button--primary hike__button" href="#gallery">View full gallery</a>
+            </div>
+
+        </div>
+
+        <div class="text">
+            <p>The advantage is that tourism in Switzerland benefits of a large diversity of beautiful landscapes in a relatively small space, offering many possibilities for various activities all the year round, in all seasons, although primarily in summer and winter. The offers of nature as well as culture are manifold, but unfortunately price levels throughout the country are high, and this can discourage many people from visiting. Despite this major drawback, millions of visitors from all over the world arrive(d) every year.</p>
+        </div>
+
+
+        <div class="gallery" aria-labelledby="gallery-title">
+            <h2 id="gallery-title" class="gallery__title">Hightlights</h2>
+
+            <ul class="gallery__grid">
+                <li class="gallery__item">
+                    <img class="gallery__image" src="./img/Hightlights1.png" alt="Дом среди зелёных полей">
+                    <p class="gallery__caption">The barns built in the 13th and 14th century</p>
+                </li>
+
+                <li class="gallery__item">
+                    <img class="gallery__image" src="./img/Hightlights2.png" alt="Поезд на виадуке в горах">
+                    <p class="gallery__caption">Riding the amazing Bernina Express</p>
+                </li>
+
+                <li class="gallery__item">
+                    <img class="gallery__image" src="./img/Hightlights3.png" alt="Канатная дорога над ледником">
+                    <p class="gallery__caption">The Matterhorn glacier cable car ride</p>
+                </li>
+            </ul>  
+        </div>
+
+        <div class="disclaimer">
+            <h3 class="disclaimer__title">Disclaimer</h3>
+            <p class="disclaimer__text">
+                The COVID-19 pandemic has dealt a severe blow to the tourism business in Switzerland. Although it is a minor position in the Swiss export balance, it is nevertheless of considerable importance for those regions of the country that attract domestic and foreign visitors. As a consequence of the lockdown measures, combined with close borders and travel bans, tourism collapsed and only briefly and partly recovered in summer. Its future is uncertain and depends on people's (future guests') attitudes and decisions as much as on the economy, political measures and, of course, the progress of the pandemic.
+            </p>
+        </div>
+    </section>
+    
+    <section class="share">
+        <div class="share__header">
+            <p class="eyebrow share__eyebrow">LET'S BUILD A COMMUNITY</p>
+            <h2 class="title share__title">Join our next destination</h2>
+        </div>
+
+        <div class="share__card">
+            <h3 class="share__card-title">Share your travels</h3>
+            <p class="share__card-text">Suggest a new travel destination that you want to see and we will feature it in our blog.</p>
+
+            <form class="share__form">
+                <label class="share__field">
+                <span class="visually-hidden">Destination name</span>
+                <input type="text" name="destination" placeholder="Destination name">
+                </label>
+
+                <label class="share__field">
+                <span class="visually-hidden">Country of Destination</span>
+                <select name="country">
+                    <option value="">Country of Destination</option>
+                    <option value="switzerland">Switzerland</option>
+                    <option value="iceland">Iceland</option>
+                    <option value="italy">Italy</option>
+                </select>
+                </label>
+
+                <label class="share__field">
+                <span class="visually-hidden">Your name</span>
+                <input type="text" name="name" placeholder="Your name">
+                </label>
+
+                <label class="share__field">
+                <span class="visually-hidden">Shooting category</span>
+                <select name="category">
+                    <option value="">Shooting category</option>
+                    <option value="landscape">Landscape</option>
+                    <option value="portrait">Portrait</option>
+                    <option value="city">City</option>
+                </select>
+                </label>
+
+                <label class="share__field">
+                <span class="visually-hidden">Description</span>
+                <textarea name="description" placeholder="Describe what kind of photos you want to focus on"></textarea>
+                </label>
+
+                <button type="submit" class="button button--primary share__submit">Submit</button>
+            </form>
+        </div>
+    </section>
     </body>
+
+    <footer class="footer">
+        <p class="footer__copyright">© 2022 Talking Travel. All Rights Reserved.</p>
+    
+        <nav class="footer__nav">
+            <a href="#" class="footer__link">Home</a>
+            <a href="#" class="footer__link">Blog</a>
+            <a href="#" class="footer__link">Gallery</a>
+            <a href="#" class="footer__link">Contact Us</a>
+        </nav>
+    </footer>
 </html>
