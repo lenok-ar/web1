@@ -12,18 +12,20 @@
 - **css/style.css** — все стили для обеих страниц.
 
 ## Структура проекта
+```
 web1/
-index.html главная страница
-story.html страница статьи
-blog.html черновик (пустой)
-css/
-style.css все стили
-img/ все картинки
-docs/
-decomposition.md разбор макета и оценка времени
-tokens.md цвета, шрифты, отступы
-README.md
-.gitignore
+  index.html          главная страница
+  story.html          страница статьи
+  blog.html           черновик (пустой)
+  css/
+    style.css         все стили
+  img/                все картинки
+  docs/
+    decomposition.md  разбор макета и оценка времени
+    tokens.md         цвета, шрифты, отступы
+  README.md
+  .gitignore
+```
 
 ## Разбор макета и оценка времени
 
