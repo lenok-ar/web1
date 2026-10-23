@@ -71,3 +71,4 @@ web1/
 
 - Макет: https://www.figma.com/design/xC3VHAMZNq9Nm9x2TgnHei/Locofy-Sample-Project---Talking-Travel--Community-
 - GitHub: https://github.com/lenok-ar/web1
+- Ссылка на опубликованную версию сайта: https://lenok-ar.github.io/web1/
