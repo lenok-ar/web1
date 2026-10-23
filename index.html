@@ -1,247 +1,260 @@
 <!DOCTYPE html>
 <html lang="ru">
+
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Talking Travel - сообщество путешественников</title>
-        
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-       
+        <link
+            href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
+
         <link rel="stylesheet" href="./css/style.css">
     </head>
 
     <body>
+        <!-- Хедер с отступами -->
+        <header class="header">
+            <!-- Логотип -->
+            <a class="logo" href="./index.html">
+                <span class="logo-top">Talking</span>
+                <span class="logo-bottom">Travel</span>
+            </a>
 
-    <!-- Хедер с отступами -->
-    <header class="header">
-        <!-- Логотип -->
-        <a class="logo" href="./index.html">
-            <span class="logo-top">Talking</span>
-            <span class="logo-bottom">Travel</span>
-        </a>
+            <!-- Правая часть -->
+            <div class="right-side">
 
-        <!-- Правая часть -->
-        <div class="right-side">
-            
-            <!-- Меню -->
-            <nav class="nav">
-                <a href="#" class="active">Home</a>
-                <a href="./story.html">Story</a>
-                <a href="#">Gallery</a>
-                <a href="#">Contact Us</a>
-            </nav>
+                <!-- Меню -->
+                <nav class="nav">
+                    <a href="#" class="active">Home</a>
+                    <a href="./story.html">Story</a>
+                    <a href="#">Gallery</a>
+                    <a href="#">Contact Us</a>
+                </nav>
 
-            <!-- Линия -->
-            <div class="separator"></div>
+                <!-- Линия -->
+                <div class="separator"></div>
 
-            <!-- Иконки -->
-            <div class="icons">
-                <img class="icon" src="img/Лупа.png">
-                <img class="icon" src="img/Профиль.png">
-            </div>
-
-        </div>
-    </header>
-
-    <section class="hero">
-        <div class="hero-block">
-            <h1 class="hero__title">
-                <span class="hero__title-accent">Let's talk</span> about<br>
-                your next trip!
-                </h1>
-            <p class="hero__description">Share your favorite travel destination and we will<br>
-                feature it in our next blog!</p>
-            <div class="hero__actions">
-                <a class="button button--primary" href="#share">
-                    Share your story</a>
-                <a class="button button--secondary" href="#video">
-                    <img class="icon--video" src="img/Видео.png">
-                    Watch highlights
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <section class="featured">
-        <div class="featured__inner">
-            <div class="featured__media">
-                 <img class="featured__image" src="./img/блог2.jpg" alt="Путешественник в горах">
-            </div>
-
-            <div class="featured__content">
-                <div class="featured__text">
-                    <p class="eyebrow featured__eyebrow">FEATURED DESTINATION</p>
-                    <h2 class="title featured__title">Our swiss adventure blog</h2>
-                    <p class="featured__description">Visiting the swiss alps? Want to know the requirements on travelling to Switzerland during the pandemic? Our blog might help!</p>             
+                <!-- Иконки -->
+                <div class="icons">
+                    <img class="icon" src="img/Лупа.png">
+                    <img class="icon" src="img/Профиль.png">
                 </div>
 
-                <div class="featured__button">
-                    <a class="button button--icon" href="#watch">
-                        <img class="featured__video" src="img/Video2.png"> Watch Now
+            </div>
+        </header>
+
+        <section class="hero">
+            <div class="hero-block">
+                <h1 class="hero__title">
+                    <span class="hero__title-accent">Let's talk</span> about<br>
+                    your next trip!
+                </h1>
+                <p class="hero__description">Share your favorite travel destination and we will<br>
+                    feature it in our next blog!</p>
+                <div class="hero__actions">
+                    <a class="button button--primary" href="#share">
+                        Share your story</a>
+                    <a class="button button--secondary" href="#video">
+                        <img class="icon--video" src="img/Видео.png">
+                        Watch highlights
                     </a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="discover">
-        <div class="discover__inner">
-            <div class="discover_header">
-                <p class="eyebrow discover__eyebrow">JOIN OUR ADVENTURES</p>
-                <h2 class="title featured__title">Discover the world with us</h2>
-            </div>
+        <section class="featured">
+            <div class="featured__inner">
+                <div class="featured__media">
+                    <img class="featured__image" src="./img/блог2.jpg" alt="Путешественник в горах">
+                </div>
 
-            <ul class="discover__grid">
-                <li>
-                    <article class="country-card">
-                    <img class="country-card__image" src="./img/Iceland.png" alt="Пейзаж Исландии">
-                    <h3 class="country-card__title">Iceland</h3>
-                    <a class="country-card__link" href="#">Discover</a>
-                    </article>
-                </li>
+                <div class="featured__content">
+                    <div class="featured__text">
+                        <p class="eyebrow featured__eyebrow">FEATURED DESTINATION</p>
+                        <h2 class="title featured__title">Our swiss adventure blog</h2>
+                        <p class="featured__description">Visiting the swiss alps? Want to know the requirements on
+                            travelling to Switzerland during the pandemic? Our blog might help!</p>
+                    </div>
 
-                <li>
-                    <article class="country-card">
-                    <img class="country-card__image" src="./img/Italy.png" alt="Пейзаж Италии">
-                    <h3 class="country-card__title">Italy</h3>
-                    <a class="country-card__link" href="#">Discover</a>
-                    </article>
-                </li>
-
-                <li>
-                    <article class="country-card">
-                    <img class="country-card__image" src="./img/Dubai.png" alt="Город Дубай">
-                    <h3 class="country-card__title">Dubai</h3>
-                    <a class="country-card__link" href="#">Discover</a>
-                    </article>
-                </li>
-
-                <li>
-                    <article class="country-card">
-                    <img class="country-card__image" src="./img/Patagonia.png" alt="Горы Патагонии">
-                    <h3 class="country-card__title">Patagonia</h3>
-                    <a class="country-card__link" href="#">Discover</a>
-                    </article>
-                </li>
-            </ul>    
-        </div>
-    </section>
-
-    <section class="share">
-        <div class="share__header">
-            <p class="eyebrow share__eyebrow">LET'S BUILD A COMMUNITY</p>
-            <h2 class="title share__title">Join our next destination</h2>
-        </div>
-
-        <div class="share__card">
-            <h3 class="share__card-title">Share your travels</h3>
-            <p class="share__card-text">Suggest a new travel destination that you want to see and we will feature it in our blog.</p>
-
-            <form class="share__form">
-                <label class="share__field">
-                <span class="visually-hidden">Destination name</span>
-                <input type="text" name="destination" placeholder="Destination name">
-                </label>
-
-                <label class="share__field">
-                <span class="visually-hidden">Country of Destination</span>
-                <select name="country">
-                    <option value="">Country of Destination</option>
-                    <option value="switzerland">Switzerland</option>
-                    <option value="iceland">Iceland</option>
-                    <option value="italy">Italy</option>
-                </select>
-                </label>
-
-                <label class="share__field">
-                <span class="visually-hidden">Your name</span>
-                <input type="text" name="name" placeholder="Your name">
-                </label>
-
-                <label class="share__field">
-                <span class="visually-hidden">Shooting category</span>
-                <select name="category">
-                    <option value="">Shooting category</option>
-                    <option value="landscape">Landscape</option>
-                    <option value="portrait">Portrait</option>
-                    <option value="city">City</option>
-                </select>
-                </label>
-
-                <label class="share__field">
-                <span class="visually-hidden">Description</span>
-                <textarea name="description" placeholder="Describe what kind of photos you want to focus on"></textarea>
-                </label>
-
-                <button type="submit" class="button button--primary share__submit">Submit</button>
-            </form>
-        </div>
-    </section>
-
-    <section class="recent">
-        <div class="recent__header">
-            <p class="eyebrow recent__eyebrow">CATCH UP TO OUR POSTS</p>
-            <h2 class="title recent__title">Recent story entries</h2>
-        </div>
-
-        <div class="recent__inner">
-            <!-- Большая карточка слева -->
-            <article class="recent__main">
-                <img class="recent__main-image" src="./img/Zermatt.png" alt="Zermatt, Switzerland">
-                
-                <div class="recent__main-content">
-                    <div class="recent__main-row">
-                        <div class="recent__main-text-block">
-                            <h3 class="recent__main-title">Zermatt, Switzerland</h3>
-                            <p class="recent__main-text">Marvel on the beauty of the iconic Matterhorn. Find the best places to stay that has the best views of this peak...</p>
-                        </div>
-                        <a class="recent__play" href="#watch">
-                            <img src="img/Video2.png" alt="Play">
+                    <div class="featured__button">
+                        <a class="button button--icon" href="#watch">
+                            <img class="featured__video" src="img/Video2.png"> Watch Now
                         </a>
                     </div>
                 </div>
-            </article>
-
-            <!-- Три маленькие карточки справа -->
-            <div class="recent__list">
-                <article class="recent__item">
-                    <img class="recent__item-image" src="./img/Tuscany.png" alt="Tuscany, Italy">
-                    <div class="recent__item-content">
-                        <h3 class="recent__item-title">Tuscany, Italy</h3>
-                        <p class="recent__item-text">The amazing Tuscany is home to famous Renaissance art and architecture and a vast scenic landscape. <a href="#" class="recent__link">view full blog...</a></p>
-                    </div>
-                </article>
-
-                <article class="recent__item">
-                    <img class="recent__item-image" src="./img/Kyoto.png" alt="Kyoto, Japan">
-                    <div class="recent__item-content">
-                        <h3 class="recent__item-title">Kyoto, Japan</h3>
-                        <p class="recent__item-text">Kyoto is well known for its temples, gardens, Shinto shrines and wooden houses. It's time to visit tokyo. <a href="#" class="recent__link">view full blog...</a></p>
-                    </div>
-                </article>
-
-                <article class="recent__item">
-                    <img class="recent__item-image" src="./img/Lofoten Islands.png" alt="Lofoten Islands, Norway">
-                    <div class="recent__item-content">
-                        <h3 class="recent__item-title">Lofoten Islands, Norway</h3>
-                        <p class="recent__item-text">Featuring razor-sharp peaks housing the arctic landscape. This astonishing island is perfect for your next postcard. <a href="#" class="recent__link">view full blog...</a></p>
-                    </div>
-                </article>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <section class="discover">
+            <div class="discover__inner">
+                <div class="discover_header">
+                    <p class="eyebrow discover__eyebrow">JOIN OUR ADVENTURES</p>
+                    <h2 class="title featured__title">Discover the world with us</h2>
+                </div>
+
+                <ul class="discover__grid">
+                    <li>
+                        <article class="country-card">
+                            <img class="country-card__image" src="./img/Iceland.png" alt="Пейзаж Исландии">
+                            <h3 class="country-card__title">Iceland</h3>
+                            <a class="country-card__link" href="#a">Discover</a>
+                        </article>
+                    </li>
+
+                    <li>
+                        <article class="country-card">
+                            <img class="country-card__image" src="./img/Italy.png" alt="Пейзаж Италии">
+                            <h3 class="country-card__title">Italy</h3>
+                            <a class="country-card__link" href="#a">Discover</a>
+                        </article>
+                    </li>
+
+                    <li>
+                        <article class="country-card">
+                            <img class="country-card__image" src="./img/Dubai.png" alt="Город Дубай">
+                            <h3 class="country-card__title">Dubai</h3>
+                            <a class="country-card__link" href="#a">Discover</a>
+                        </article>
+                    </li>
+
+                    <li>
+                        <article class="country-card">
+                            <img class="country-card__image" src="./img/Patagonia.png" alt="Горы Патагонии">
+                            <h3 class="country-card__title">Patagonia</h3>
+                            <a class="country-card__link" href="#a">Discover</a>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="share">
+            <div class="share__header">
+                <p class="eyebrow share__eyebrow">LET'S BUILD A COMMUNITY</p>
+                <h2 class="title share__title">Join our next destination</h2>
+            </div>
+
+            <div class="share__card">
+                <h3 class="share__card-title">Share your travels</h3>
+                <p class="share__card-text">Suggest a new travel destination that you want to see and we will feature it in
+                    our blog.</p>
+
+                <div class="share__form">
+                    <label class="share__field">
+                        <span class="visually-hidden">Destination name</span>
+                        <input type="text" name="destination" placeholder="Destination name">
+                    </label>
+
+                    <label class="share__field">
+                        <span class="visually-hidden">Country of Destination</span>
+                        <select name="country">
+                            <option value="">Country of Destination</option>
+                            <option value="switzerland">Switzerland</option>
+                            <option value="iceland">Iceland</option>
+                            <option value="italy">Italy</option>
+                        </select>
+                    </label>
+
+                    <label class="share__field">
+                        <span class="visually-hidden">Your name</span>
+                        <input type="text" name="name" placeholder="Your name">
+                    </label>
+
+                    <label class="share__field">
+                        <span class="visually-hidden">Shooting category</span>
+                        <select name="category">
+                            <option value="">Shooting category</option>
+                            <option value="landscape">Landscape</option>
+                            <option value="portrait">Portrait</option>
+                            <option value="city">City</option>
+                        </select>
+                    </label>
+
+                    <label class="share__field">
+                        <span class="visually-hidden">Description</span>
+                        <textarea name="description"
+                            placeholder="Describe what kind of photos you want to focus on"></textarea>
+                    </label>
+
+                    <button type="submit" class="button button--primary share__submit">Submit</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="recent">
+            <div class="recent__header">
+                <p class="eyebrow recent__eyebrow">CATCH UP TO OUR POSTS</p>
+                <h2 class="title recent__title">Recent story entries</h2>
+            </div>
+
+            <div class="recent__inner">
+                <!-- Большая карточка слева -->
+                <article class="recent__main">
+                    <img class="recent__main-image" src="./img/Zermatt.png" alt="Zermatt, Switzerland">
+
+                    <div class="recent__main-content">
+                        <div class="recent__main-row">
+                            <div class="recent__main-text-block">
+                                <h3 class="recent__main-title">Zermatt, Switzerland</h3>
+                                <p class="recent__main-text">Marvel on the beauty of the iconic Matterhorn. Find the best
+                                    places to stay that has the best views of this peak...</p>
+                            </div>
+                            <a class="recent__play" href="#watch">
+                                <img src="img/Video2.png" alt="Play">
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Три маленькие карточки справа -->
+                <div class="recent__list">
+                    <article class="recent__item">
+                        <img class="recent__item-image" src="./img/Tuscany.png" alt="Tuscany, Italy">
+                        <div class="recent__item-content">
+                            <h3 class="recent__item-title">Tuscany, Italy</h3>
+                            <p class="recent__item-text">The amazing Tuscany is home to famous Renaissance art and
+                                architecture and a vast scenic landscape. <a href="#Tuscany" class="recent__link">view full
+                                    blog...</a></p>
+                        </div>
+                    </article>
+
+                    <article class="recent__item">
+                        <img class="recent__item-image" src="./img/Kyoto.png" alt="Kyoto, Japan">
+                        <div class="recent__item-content">
+                            <h3 class="recent__item-title">Kyoto, Japan</h3>
+                            <p class="recent__item-text">Kyoto is well known for its temples, gardens, Shinto shrines and
+                                wooden houses. It's time to visit tokyo. <a href="#Kyoto" class="recent__link">view full
+                                    blog...</a></p>
+                        </div>
+                    </article>
+
+                    <article class="recent__item">
+                        <img class="recent__item-image" src="./img/Lofoten Islands.png" alt="Lofoten Islands, Norway">
+                        <div class="recent__item-content">
+                            <h3 class="recent__item-title">Lofoten Islands, Norway</h3>
+                            <p class="recent__item-text">Featuring razor-sharp peaks housing the arctic landscape. This
+                                astonishing island is perfect for your next postcard. <a href="#Lofoten" class="recent__link">view
+                                    full blog...</a></p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
     </body>
 
     <footer class="footer">
         <p class="footer__copyright">© 2022 Talking Travel. All Rights Reserved.</p>
-    
+
         <nav class="footer__nav">
-            <a href="#" class="footer__link">Home</a>
-            <a href="#" class="footer__link">Blog</a>
-            <a href="#" class="footer__link">Gallery</a>
-            <a href="#" class="footer__link">Contact Us</a>
+            <a href="#Home" class="footer__link">Home</a>
+            <a href="#Blog" class="footer__link">Blog</a>
+            <a href="#Gallery" class="footer__link">Gallery</a>
+            <a href="#Contact Us" class="footer__link">Contact Us</a>
         </nav>
     </footer>
+
 </html>
